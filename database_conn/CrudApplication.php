@@ -15,7 +15,7 @@ $this->conn = $this->db->connect();
 
 }
 
-//function to add the customer to the databas
+//function to show all customers from the database
 
 
 public function showAllCustomers(){
@@ -38,6 +38,8 @@ if($result)
 	echo $e->getMessage();
 }
 }
+
+//function to show a single customer from the database
 
 public function showSingleCustomer($id){
 
@@ -70,6 +72,7 @@ public function showSingleCustomer($id){
 
 }
 
+//function to add a customer to the database
 public function addCustomer($name,$email,$surname,$gender){
 
 $customer = new Customer();
@@ -111,6 +114,8 @@ echo $e->getMessage();
 
 }
 
+//function to delete the customer from the database
+
 public function deleteCustomer($id){
 
 	$customer = new Customer();
@@ -141,6 +146,8 @@ public function deleteCustomer($id){
 
 	}
 }
+
+//function to update a single customer
 
 public function updateCustomer($id,$name,$email,$surname,$gender){
 

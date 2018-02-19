@@ -1,6 +1,6 @@
 <?php
 
-//class that has the basic connection to the database
+
 
 
 class DbConn{

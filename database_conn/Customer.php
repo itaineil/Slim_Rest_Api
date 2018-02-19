@@ -1,6 +1,6 @@
 <?php
 
-
+//model class for each customer
 
 class Customer{
 

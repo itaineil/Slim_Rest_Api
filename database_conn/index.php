@@ -4,20 +4,11 @@
 require "../api/Slim/Slim.php";
 require "CrudApplication.php";
 
-//class that will handle all the routing in the application
+
+
 \Slim\Slim::registerAutoloader();
+
 $app = new \Slim\Slim();
-
-
-//customers
-
-$app->get('/',function() use ($app){
-
-$app->response->setStatus(200);
-echo "home route";
-
-
-});
 
 $app->get('/customers',function(){
 
